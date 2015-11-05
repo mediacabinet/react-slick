@@ -255,8 +255,15 @@ var helpers = {
     };
     if (this.props.autoplay) {
       window.clearTimeout(this.state.autoPlayTimer);
+
+      var speed = this.props.autoplaySpeed;
+      if (this.state.firstSlide && this.props.firstSlideAutoplaySpeed !== null) {
+          speed = this.props.firstSlideAutoplaySpeed;
+      }
+
       this.setState({
-        autoPlayTimer: window.setTimeout(play, this.props.autoplaySpeed)
+        firstSlide: false,
+        autoPlayTimer: window.setTimeout(play, speed)
       });
     }
   }
