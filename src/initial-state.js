@@ -5,6 +5,7 @@ var initialState = {
     currentDirection: 0,
     currentLeft: null,
     currentSlide: 0,
+    firstSlide: true,
     direction: 1,
     // listWidth: null,
     // listHeight: null,

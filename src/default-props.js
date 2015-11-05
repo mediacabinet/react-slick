@@ -5,6 +5,7 @@ var defaultProps = {
     arrows: true,
     autoplay: false,
     autoplaySpeed: 3000,
+    firstSlideAutoplaySpeed: null,
     centerMode: false,
     centerPadding: '50px',
     cssEase: 'ease',
